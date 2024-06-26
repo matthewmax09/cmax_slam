@@ -21,7 +21,7 @@
     <!-- FRONT-END PARAMS -->
     <param name="num_events_per_packet" value="5000" /> <!-- Depends on the camera resolution, motion speed, and event sampling rate -->
     <param name="dt_ang_vel" value="0.04" /> <!-- Angular velocity frequency f = 1/dt_ang_vel -->
-    <param name="show_local_iwe" value="true" /> <!-- Whether to publish local IWEs -->
+    <param name="show_local_iwe" value="false" /> <!-- Whether to publish local IWEs -->
 
     <!-- BACK-END PARAMS -->
     <!-- Sliding window settings-->
@@ -31,7 +31,7 @@
     <param name="spline_degree" value="1" /> <!-- 1: Linear, 3: Cubic -->
     <param name="dt_knots" value="0.1" />
     <!-- Pano map settings -->
-    <param name="pano_height" value="256" /> <!-- The bigger the map, the slower the speed of CMax-SLAM -->
+    <param name="pano_height" value="480" /> <!-- The bigger the map, the slower the speed of CMax-SLAM -->
     <param name="backend_min_ev_rate" value="10000" /> <!-- Minimal event rate to launch the backend [ev/s] -->
     <param name="max_update_times" value="100" /> <!-- Max updating times for the panoramic map (updating frequency: 20Hz -->
     <param name="Y_angle" value="0.0" /> <!-- Set the starting point of the camera FOV (initial yaw) [deg] -->

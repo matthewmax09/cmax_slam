@@ -51,10 +51,10 @@
     R: [1, 0, 0,  0, 1, 0,  0, 0, 1],
     P: [518.0679, 0, 354.9334, 0, 0, 516.7520, 239.6250, 0, 0, 0, 1, 0],
     binning_x: 0, binning_y: 0,
-    roi: {x_offset: 0, y_offset: 0, height: 0, width: 0, do_rectify: false} }' --once" />
+    roi: {x_offset: 0, y_offset: 0, height: 0, width: 0, do_rectify: false} }' " />
 
   <!-- Play rosbag -->
-  <node pkg="rosbag" type="play" name="player" args="-d 1.0 -r 1.0 /home/shuang/datasets/ECRot_dataset/tub_main_building/events.bag" />
+  <!-- <node pkg="rosbag" type="play" name="player" args="-d 1.0 -r 1.0 /home/airlab/cmax_slam_ws/datasets/ECRot/Brandenburg_Gate/events.bag" /> -->
 
   <!-- Visualize local motion-compensated images of warped events -->
   <node name="local_iwe_view" pkg="image_view" type="image_view">
